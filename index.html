@@ -8,14 +8,18 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <p>
-        <label for="n1">Введіть А:</label>
-        <input type="text" id="n1">
-    </p>
-    <p>
-        <label for="n2">Введіть B:</label>
-        <input type="text" id="n2">
-    </p>
+    <div>
+        <label for="n1">Введіть А:(основа степеня, підкореневий вираз, косинус, синус, факторіал)</label>
+        <div>
+            <input type="text" id="n1">
+        </div>
+    </div>
+    <div>
+        <label for="n2">Введіть B: (показник степеня, показник кореня)</label>
+        <div>
+            <input type="text" id="n2">
+        </div>
+    </div>
     <div>
         <button onclick="add()">Додати</button>
         <button onclick="subtract()">Відняти</button>
@@ -25,9 +29,9 @@
     <div>
         <button onclick="power()">Піднести до степеня</button>
         <button onclick="radical()">Корінь числа</button>
-        <button>Косинус</button>
-        <button>Синус</button>
-        <button>Факторіал</button>
+        <button onclick="cosinus()">Косинус</button>
+        <button onclick="sinus()">Синус</button>
+        <button onclick="fact()">Факторіал</button>
     </div>
     <hr>
     <p id="out">Результат</p>

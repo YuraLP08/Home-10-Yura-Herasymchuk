@@ -48,4 +48,25 @@ function radical() {
   document.getElementById('out').innerHTML = radnum
 }
 
+function cosinus() {
+  var num1, cosnum
+  num1 = document.getElementById('n1').value
+  cosnum = Math.cos(num1)
+  document.getElementById('out').innerHTML = cosnum
+}
 
+function sinus() {
+  var num1, sinnum
+  num1 = document.getElementById('n1').value
+  sinnum = Math.sin(num1)
+  document.getElementById('out').innerHTML = sinnum
+}
+
+function fact() {
+  var num1, factnum=1
+  num1 = document.getElementById('n1').value
+  for (i = num1; i >= 1; i--) {
+    factnum=factnum*i;
+  }
+  document.getElementById('out').innerHTML = factnum
+}
