@@ -3,8 +3,10 @@
 function add() {
   var num1, num2, add
   num1 = document.getElementById('n1').value
+  num1 = parseInt(num1)
   num2 = document.getElementById('n2').value
-  add = num1+num2
+  num2 = parseInt(num2)
+  add = num2 + num1
   document.getElementById('out').innerHTML = add
 }
 
@@ -63,7 +65,7 @@ function sinus() {
 }
 
 function fact() {
-  var num1, factnum=1
+  var num1, factnum=1, i
   num1 = document.getElementById('n1').value
   for (i = num1; i >= 1; i--) {
     factnum=factnum*i;
