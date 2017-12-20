@@ -3,9 +3,7 @@
 function add() {
   var num1, num2, add
   num1 = document.getElementById('n1').value
-  num1 = parseInt(num1)
   num2 = document.getElementById('n2').value
-  num2 = parseInt(num2)
   add = num1+num2
   document.getElementById('out').innerHTML = add
 }
@@ -13,9 +11,7 @@ function add() {
 function subtract() {
   var num1, num2, sub
   num1 = document.getElementById('n1').value
-  num1 = parseInt(num1)
   num2 = document.getElementById('n2').value
-  num2 = parseInt(num2)
   sub = num1-num2
   document.getElementById('out').innerHTML = sub
 }
@@ -23,9 +19,7 @@ function subtract() {
 function multiply() {
   var num1, num2, mult
   num1 = document.getElementById('n1').value
-  num1 = parseInt(num1)
   num2 = document.getElementById('n2').value
-  num2 = parseInt(num2)
   mult = num1*num2
   document.getElementById('out').innerHTML = mult
 }
@@ -33,10 +27,25 @@ function multiply() {
 function divide() {
   var num1, num2, divide
   num1 = document.getElementById('n1').value
-  num1 = parseInt(num1)
   num2 = document.getElementById('n2').value
-  num2 = parseInt(num2)
   divide = num1/num2
   document.getElementById('out').innerHTML = divide
 }
+
+function power() {
+  var num1, num2, pownum
+  num1 = document.getElementById('n1').value
+  num2 = document.getElementById('n2').value
+  pownum = Math.pow(num1, num2)
+  document.getElementById('out').innerHTML = pownum
+}
+
+function radical() {
+  var num1, num2, radnum
+  num1 = document.getElementById('n1').value
+  num2 = document.getElementById('n2').value
+  radnum = Math.exp(Math.log(num1)/num2)
+  document.getElementById('out').innerHTML = radnum
+}
+
 
